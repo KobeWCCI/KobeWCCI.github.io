@@ -2,15 +2,14 @@
     padding: 0;
     margin: 0;
     font-style: sans-serif;
-    font-size: x-large;
+    font-size: x-large
 }
 body{
     background: rgba(0, 0, 0, 0.3) url(/sky.jpg); 
     width: 100%;
-    height: 100vh;
-    flex-wrap: wrap;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-blend-mode: darken;
 
@@ -26,6 +25,7 @@ header{
     background-color: slategray;
     display: flex;
     justify-content: space-between;
+    text-align: center;
    }
 
    .name{
@@ -38,10 +38,23 @@ header{
     font-size: 1.4em;
     padding: 20px;
    }
-   .container{
-    display: grid;
-   }
    .about-me{
     text-align: center;
     font-size: large;
    }
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+
+}
+#links{
+    text-align: center;
+justify-content: space-evenly;
+}
