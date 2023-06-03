@@ -1,22 +1,24 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-style: sans-serif;
+    font-size: x-large;
 }
 body{
-    background-image: url(/sky.jpg);  
+    background: rgba(0, 0, 0, 0.3) url(/sky.jpg); 
     width: 100%;
     height: 100vh;
+    flex-wrap: wrap;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
 
     
 }
 footer{
-    width: 500px;
-    height: 500px;
-    
+    padding: 100px;
+    text-align: center;    
 }
 header{
     width: 100%;
@@ -24,7 +26,6 @@ header{
     background-color: slategray;
     display: flex;
     justify-content: space-between;
-    align-items: center;
    }
 
    .name{
@@ -37,18 +38,10 @@ header{
     font-size: 1.4em;
     padding: 20px;
    }
-  .flex-container{
-    display: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    
-}
-  .flex-item:nth-child(1){
-    background-color: black;
-    order: 1;
-    
-  
-  }
+   .container{
+    display: grid;
+   }
+   .about-me{
+    text-align: center;
+    font-size: large;
+   }
